@@ -1,19 +1,135 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    color: white;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+#item-1 {
+  display: flex;
+  background-color: steelblue;
+  width: 50rem;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+#item-2 {
+  display: flex;
+  background-color: #fe7e02;
+  order: -1;
+  width: 12.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+#item-3 {
+  display: flex;
+  background-color: #45525b;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+.rotacionar {
+  transform: rotate(270deg);
+}
+
+.rotacionar2 {
+  transform: rotate(270deg);
+}
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: collumn;
   }
-  
+
   #item-1 {
+    display: flex;
     background-color: steelblue;
+    width: 62.5vw;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
   }
-  
+
   #item-2 {
+    display: flex;
     background-color: #fe7e02;
+    order: 1;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
   }
-  
+
   #item-3 {
+    display: flex;
     background-color: #45525b;
+    width: 15.62vw;
+    justify-content: center;
+    align-items: center;
   }
-  
+  .rotacionar {
+    transform: rotate(270deg);
+  }
+  .rotacionar2 {
+    transform: rotate(0deg);
+  }
+}
+/*----------------------------------------------------------------------*/
+
+@media screen and (min-width: 55px) and (max-width: 800px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #item-1 {
+    display: flex;
+    background-color: steelblue;
+    width: 90%;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+
+  #item-2 {
+    display: flex;
+    background-color: #fe7e02;
+    order: 0;
+    width: 40%;
+    height: 20vh;
+  }
+
+  #item-3 {
+    display: flex;
+    background-color: #45525b;
+    width: 40%;
+  }
+
+  .rotacionar2 {
+    transform: rotate(0deg);
+  }
+
+  .rotacionar {
+    transform: rotate(0deg);
+  }
+}
