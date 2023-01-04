@@ -1,19 +1,148 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    color: white;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+body {
+  max-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container div {
+  border: 1px solid black;
+}
+
+
+#item-1 {
+  background-color: steelblue;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 23.5%;
+  min-height: 23.5vh;
+}
+
+#item-2 {
+  background-color: #fe7e02;
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+  height: 65%;
+  min-height: 65vh;
+}
+
+#item-3 {
+  background-color: #45525b;
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+  height: 65%;
+  min-height: 65vh;
+}
+
+.nav__input:checked,
+.nav__manu {
+  background: #fe7e02;
+}
+
+.nav__menu {
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+
+.nav {
+  background: #292929;
+  height: 80px;
+  color: #fff;
+}
+
+.nav__container {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.nav__label,
+.nav__input {
+  display: none;
+}
+
+.nav__menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+  padding-top: 5%;
+  margin-right: 8%;
+}
+
+.nav__item {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nsv__item:after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+}
+
+
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 800px) {
+
+  /* celulares */
+  .nav__label {
+    display: block;
+    cursor: pointer;
   }
-  
-  #item-1 {
-    background-color: steelblue;
+
+  .nav__menu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background: #f08000;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  #item-2 {
-    background-color: #fe7e02;
+
+  .nav__input:checked,
+  .nav__manu {
+    background: tomato;
   }
-  
-  #item-3 {
-    background-color: #45525b;
-  }
-  
+}
+
+@media screen and (min-device-width : 800px) and (max-device-width : 1200px) {
+  /* tablets */
+}
+
+@media screen and (min-device-width : 1200px) {
+  /* computadores */
+}
