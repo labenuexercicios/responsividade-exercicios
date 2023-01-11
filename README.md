@@ -1,4 +1,4 @@
-# Responsividade - Exercício
+ # Responsividade - Exercício
 
 ### Setup do projeto no Git
 
